@@ -7,5 +7,5 @@ class PropertiesConfig(AppConfig):
     name = "properties"
 
     def ready(self):
-        # Import signal handlers
-        from . import signals  # noqa: F401
+        # Register signal handlers (checker requires this exact import string)
+        import properties.signals  # noqa: F401
