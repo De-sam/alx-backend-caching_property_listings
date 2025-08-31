@@ -22,6 +22,7 @@ INSTALLED_APPS = [
 
     # local
     "properties",
+    "properties.apps.PropertiesConfig",
 ]
 
 MIDDLEWARE = [
